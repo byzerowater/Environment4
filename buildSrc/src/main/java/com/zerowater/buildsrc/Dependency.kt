@@ -29,10 +29,10 @@ object Dependency {
 
     object AndroidX {
         // https://developer.android.com/jetpack/androidx/releases/core
-        const val coreKtx = "androidx.core:core-ktx:1.6.0"
+        const val coreKtx = "androidx.core:core-ktx:1.7.0"
 
         // https://developer.android.com/jetpack/androidx/releases/appcompat
-        const val appCompat = "androidx.appcompat:appcompat:1.3.1"
+        const val appCompat = "androidx.appcompat:appcompat:1.4.1"
 
         // https://developer.android.com/jetpack/androidx/releases/activity
         const val activity = "androidx.activity:activity-ktx:1.3.1"
@@ -50,7 +50,8 @@ object Dependency {
         private const val navigationVersion = "2.3.5"
         const val navigationFragment = "androidx.navigation:navigation-fragment:$navigationVersion"
         const val navigationRuntime = "androidx.navigation:navigation-runtime:$navigationVersion"
-        const val navigationFragmentKtx = "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
+        const val navigationFragmentKtx =
+            "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
         const val navigationUi = "androidx.navigation:navigation-ui:$navigationVersion"
         const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:$navigationVersion"
 
@@ -58,8 +59,10 @@ object Dependency {
         private const val lifecycleVersion = "2.3.1"
         const val liveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
         const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
+
         // alternately - if using Java8, use the following instead of lifecycle-compiler
-        const val lifecycleCommonJava8 = "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
+        const val lifecycleCommonJava8 =
+            "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/annotation
         const val annotation = "androidx.annotation:annotation:1.2.0"
@@ -78,14 +81,6 @@ object Dependency {
 
         // https://developer.android.com/jetpack/androidx/releases/webkit
         const val webkit = "androidx.webkit:webkit:1.4.0"
-    }
-
-    object Databinding {
-        const val version = "7.0.3"
-
-        const val runtime = "androidx.databinding:databinding-runtime:$version"
-        const val common = "androidx.databinding:databinding-common:$version"
-        const val adapters = "androidx.databinding:databinding-adapters:$version"
     }
 
     object Google {
@@ -111,6 +106,14 @@ object Dependency {
         const val retrofitVersion = "2.9.0"
         const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
         const val moshiConverter = "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
+    }
+
+    object Hilt {
+        // https://dagger.dev/hilt/gradle-setup.html
+        // https://github.com/google/dagger
+        const val hiltVersion = "2.41"
+        const val hiltAndroid = "com.google.dagger:hilt-android:$hiltVersion"
+        const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:$hiltVersion"
     }
 
     object AndroidTest {
