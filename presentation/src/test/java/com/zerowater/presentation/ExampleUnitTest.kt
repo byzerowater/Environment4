@@ -1,4 +1,4 @@
-package com.zerowater.data
+package com.zerowater.presentation
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

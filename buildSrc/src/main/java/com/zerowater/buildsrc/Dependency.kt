@@ -29,13 +29,20 @@ object Dependency {
 
     object AndroidX {
         // https://developer.android.com/jetpack/androidx/releases/core
-        const val coreKtx = "androidx.core:core-ktx:1.7.0"
+        private const val coreVersion = "1.7.0"
+        const val coreKtx = "androidx.core:core-ktx:$coreVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/appcompat
-        const val appCompat = "androidx.appcompat:appcompat:1.4.1"
+        private const val appcompatVersion = "1.4.1"
+        const val appCompat = "androidx.appcompat:appcompat:$appcompatVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/activity
-        const val activity = "androidx.activity:activity-ktx:1.3.1"
+        private const val activityVersion = "1.4.0"
+        const val activityKtx = "androidx.activity:activity-ktx:$activityVersion"
+
+        // https://developer.android.com/jetpack/androidx/releases/fragment
+        private const val fragmentVersion = "1.4.1"
+        const val fragmentKtx = "androidx.fragment:fragment-ktx:$fragmentVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/constraintlayout
         const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.1"
@@ -56,13 +63,11 @@ object Dependency {
         const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:$navigationVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/lifecycle
-        private const val lifecycleVersion = "2.3.1"
-        const val liveDataKtx = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion"
+        // https://developer.android.com/jetpack/androidx/releases/lifecycle
+        private const val lifecycleVersion = "2.5.0-beta01"
+        const val lifecycleViewModelKtx =
+            "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion"
         const val lifecycleRuntimeKtx = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion"
-
-        // alternately - if using Java8, use the following instead of lifecycle-compiler
-        const val lifecycleCommonJava8 =
-            "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/annotation
         const val annotation = "androidx.annotation:annotation:1.2.0"
@@ -129,6 +134,10 @@ object Dependency {
         const val espresso = "androidx.test.espresso:espresso-core:3.4.0"
 
         const val mockito = "org.mockito:mockito-core:4.0.0"
+
+        // https://developer.android.com/jetpack/androidx/releases/fragment
+        private const val fragmentVersion = "1.4.1"
+        const val fragmentTesting = "androidx.fragment:fragment-testing:$fragmentVersion"
 
         // https://github.com/mockito/mockito-kotlin
         const val mockitoKotlin = "org.mockito.kotlin:mockito-kotlin:4.0.0"

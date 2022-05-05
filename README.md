@@ -6,14 +6,13 @@ The libraries and tools used include:
 
 - Support library
 - androidX library
-- AAC(ViewModel, LiveData, Data Binding) 
+- AAC(ViewModel, LiveData, Data Binding)
 - ConstraintLayout
 - coroutines
 - Navigation
 - [Retrofit](http://square.github.io/retrofit/) and [OkHttp](https://github.com/square/okhttp)
 - [Hilt](http://google.github.io/dagger/)
 - [Timber](https://github.com/JakeWharton/timber)
-
 
 참고
 - [멀티모듈 - Android Multi module(멀티 모듈)의 dependency는 어떻게 하는 게 좋을까?](https://thdev.tech/android/2021/12/17/Android-Multi-Module/)
