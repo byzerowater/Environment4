@@ -11,14 +11,14 @@ object Dependency {
 
     object Kotlin {
         // https://github.com/JetBrains/kotlin
-        const val version: String = "1.5.21"
+        private const val version: String = "1.5.21"
 
         const val stdLib = "org.jetbrains.kotlin:kotlin-stdlib:$version"
     }
 
     object Coroutines {
         // https://github.com/Kotlin/kotlinx.coroutines
-        const val version: String = "1.5.2"
+        private const val version: String = "1.5.2"
 
         const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$version"
         const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$version"
@@ -103,12 +103,12 @@ object Dependency {
 
     object Network {
         // https://square.github.io/okhttp/
-        const val okhttpVersion = "4.9.0"
+        private const val okhttpVersion = "4.9.3"
         const val okhttp = "com.squareup.okhttp3:okhttp:$okhttpVersion"
         const val okhttpLogging = "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
 
         // https://github.com/square/retrofit
-        const val retrofitVersion = "2.9.0"
+        private const val retrofitVersion = "2.9.0"
         const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
         const val moshiConverter = "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
     }
@@ -116,7 +116,7 @@ object Dependency {
     object Hilt {
         // https://dagger.dev/hilt/gradle-setup.html
         // https://github.com/google/dagger
-        const val hiltVersion = "2.41"
+        private const val hiltVersion = "2.41"
         const val hiltAndroid = "com.google.dagger:hilt-android:$hiltVersion"
         const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:$hiltVersion"
     }

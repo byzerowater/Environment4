@@ -13,10 +13,23 @@ android {
     }
 
     buildTypes {
-        release {
+        def debugBaseUrl = { path -> "\"https://api.github.com/$path\"" }
+        def releaseBaseUrl = { path -> "\"https://api.github.com/$path\"" }
+
+        debug {
+            buildConfigField "String", "BASE_URL", debugBaseUrl("")
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        release {
+            buildConfigField "String", "BASE_URL", releaseBaseUrl("")
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
