@@ -10,7 +10,7 @@ plugins {
 apply from: rootProject.file("android.gradle")
 
 dependencies {
-
+    implementation project(':domain')
 
     implementation(Dependency.AndroidX.coreKtx)
     implementation(Dependency.AndroidX.appCompat)
@@ -18,6 +18,7 @@ dependencies {
     implementation(Dependency.AndroidX.fragmentKtx)
     implementation(Dependency.AndroidX.lifecycleViewModelKtx)
     implementation(Dependency.AndroidX.lifecycleRuntimeKtx)
+    implementation(Dependency.AndroidX.constraintLayout)
 
     implementation(Dependency.Google.material)
 
@@ -28,7 +29,16 @@ dependencies {
     implementation(Dependency.Hilt.hiltAndroid)
     kapt(Dependency.Hilt.hiltAndroidCompiler)
 
+    implementation(Dependency.AndroidX.navigationFragmentKtx)
+    implementation(Dependency.AndroidX.navigationUiKtx)
+
     androidTestImplementation(Dependency.AndroidTest.androidxJunit)
     androidTestImplementation(Dependency.AndroidTest.espresso)
 
+}
+
+android {
+    buildFeatures {
+        viewBinding true
+    }
 }

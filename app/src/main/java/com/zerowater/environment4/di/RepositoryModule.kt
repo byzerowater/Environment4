@@ -1,6 +1,7 @@
 package com.zerowater.environment4.di
 
 import com.zerowater.data.GithubRepositoryImpl
+import com.zerowater.data.mapper.Mapper
 import com.zerowater.domain.repository.GithubRepository
 import dagger.Module
 import dagger.Provides
@@ -16,5 +17,11 @@ internal object RepositoryModule {
     @Provides
     fun providesGithubRepository(source: GithubRepositoryImpl): GithubRepository {
         return source
+    }
+
+    @Singleton
+    @Provides
+    fun providesMapper(): Mapper {
+        return Mapper()
     }
 }

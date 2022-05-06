@@ -45,7 +45,9 @@ object Dependency {
         const val fragmentKtx = "androidx.fragment:fragment-ktx:$fragmentVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/constraintlayout
-        const val constraintLayout = "androidx.constraintlayout:constraintlayout:2.1.1"
+        private const val constraintLayoutVersion = "2.1.3"
+        const val constraintLayout =
+            "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/coordinatorlayout
         const val coordinatorlayout = "androidx.coordinatorlayout:coordinatorlayout:1.1.0"
@@ -54,12 +56,9 @@ object Dependency {
         const val vectorDrawable = "androidx.vectordrawable:vectordrawable:1.1.0"
 
         // https://developer.android.com/jetpack/androidx/releases/navigation
-        private const val navigationVersion = "2.3.5"
-        const val navigationFragment = "androidx.navigation:navigation-fragment:$navigationVersion"
-        const val navigationRuntime = "androidx.navigation:navigation-runtime:$navigationVersion"
+        private const val navigationVersion = "2.4.2"
         const val navigationFragmentKtx =
             "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
-        const val navigationUi = "androidx.navigation:navigation-ui:$navigationVersion"
         const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:$navigationVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/lifecycle
@@ -73,7 +72,8 @@ object Dependency {
         const val annotation = "androidx.annotation:annotation:1.2.0"
 
         // https://developer.android.com/jetpack/androidx/releases/recyclerview
-        const val recyclerView = "androidx.recyclerview:recyclerview:1.2.1"
+        private const val recyclerViewVersion = "1.2.1"
+        const val recyclerView = "androidx.recyclerview:recyclerview:$recyclerViewVersion"
 
         // https://developer.android.com/jetpack/androidx/releases/swiperefreshlayout
         const val swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"

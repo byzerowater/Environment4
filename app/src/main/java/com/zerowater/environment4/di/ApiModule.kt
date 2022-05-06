@@ -74,7 +74,6 @@ internal object ApiModule {
      */
     @Singleton
     @Provides
-    @Named(DISPATCHER_NAME)
     fun provideIoDispatcher() = Dispatchers.IO
 
 
