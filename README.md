@@ -6,9 +6,8 @@
 
 The libraries and tools used include:
 
-- Support library
 - androidX library
-- AAC(ViewModel, LiveData, Data Binding)
+- AAC(ViewModel, Data Binding)
 - ConstraintLayout
 - coroutines
 - Navigation
