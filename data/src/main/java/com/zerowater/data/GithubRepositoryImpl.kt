@@ -16,7 +16,7 @@ class GithubRepositoryImpl @Inject constructor(
     private val mapper: Mapper
 ) : GithubRepository {
 
-    override suspend fun getRepos(owner: String): Flow<List<GithubRepo>> = flow {
+    override fun getRepos(owner: String): Flow<List<GithubRepo>> = flow {
         emit(
             mapper.mapperToGithubRepo(remoteSource.getRepos(owner))
         )
